@@ -1,0 +1,108 @@
+.flex-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(96, 79, 252, 0.002);
+}
+
+.board {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    background-color: white;
+    box-shadow: inset 0 -1em 1em rgba(0, 0, 0, 0.1), 0 0 0 2px rgba(255, 255, 255), 
+    0 -1em 1em rgba(0, 0, 0, 0.3) ;
+}
+
+.board:hover {
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    width: 60%;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.title {
+    font-size: 200%;
+    font-weight: bold;
+    color:rgb(221, 102, 232)
+}
+
+
+.buttons {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 0.3em 0.3em 0;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 5%;
+    text-decoration: none;
+    font-weight: 400;
+    text-align: center;
+    transition: all 0.25;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.blackButton {
+    background-color: black;
+    color: white;
+}
+
+.blackButton:hover {
+    background-color: white;
+    color: black;
+}
+
+.grayButton{
+    background-color: rgba(128, 128, 128, 0.411);
+    color: black;
+}
+
+.grayButton:hover {
+    background-color: rgba(95, 95, 95);
+    color: white;
+}
+
+.randomButton {
+    background-image: linear-gradient(0.25turn, #f65cfc, #583cf6);
+}
+
+.randomButton:hover {
+    background-image: linear-gradient(0.25turn, #20ff02, #aecc03);
+}
+
+.erasorButton {
+    background-color: rgba(255, 255, 255);
+    color: rgba(0, 0, 0);
+}
+
+.erasorButton:hover {
+    background-color: white;
+    color: rgba(255, 255, 255);
+}
+
+input {
+    width: 50px;
+}
+
+.mode {
+    color:#583cf6;
+    margin-bottom: 5px;
+}
+
+.error {
+    display: none;
+}
